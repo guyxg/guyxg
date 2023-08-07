@@ -1,0 +1,147 @@
+:root {
+    --paper-color: rgb(152, 203, 152);
+    --rock-color: rgba(188, 70, 70, 0.829);
+    --scissors-color: rgb(255, 239, 158);
+}
+
+body {
+    background: rgb(72,171,173);
+    background: linear-gradient(0deg, rgba(72,171,173,1) 50%, rgb(128, 180, 181) 100%);
+    background-attachment: fixed;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 25px;
+    text-shadow: 0px 3px rgb(45, 45, 45);
+}
+
+.title-container {
+    justify-content: center;
+    display: flex;
+}
+
+.header-rock {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--rock-color);
+    font-size: 70px;
+    margin: -20px;
+}
+
+.header-paper {
+    font-size: 60px;
+    color: var(--paper-color);
+    font-family: 'Caveat', cursive;
+}
+
+.header-scissors {
+    margin-top: -15px;
+    margin-left: -30px;
+    color: var(--scissors-color);
+    font-family: 'Urbanist', sans-serif;
+}
+
+.body-text {
+    margin-top: 25px;
+}
+
+.icons-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.icon-box {
+    display: flex;
+    flex-shrink: 0;
+    direction: row;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin: 15px;
+    border-radius: 50%;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    height: 100%;
+    user-select: none;
+}
+
+#scissors {
+    background-color: rgb(255, 239, 158);
+}
+
+#scissors:hover {
+    background: rgb(227, 213, 142);
+}
+
+#scissors:active {
+    background: var(--scissors-color);
+}
+
+#rock {
+    background: rgba(188, 70, 70, 0.829);
+}
+
+#rock:hover {
+    background: rgba(194, 87, 87, 0.677);
+}
+
+#rock:active {
+    background: var(--rock-color);
+}
+
+#paper {
+    background: rgb(152, 203, 152);
+}
+
+#paper:hover {
+    background: rgb(127, 172, 127);
+}
+
+#paper:active {
+    background: rgb(152, 203, 152);
+}
+
+body {
+    font-family: 'Prata', serif;
+    color: white;
+    font-size: 25px;
+    /* text-shadow: 0px 2px rgb(45, 45, 45); */
+    text-align: center;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.score {
+    width: 125px;
+    font-size: 100px;
+    margin: 0 50px;
+}
+
+.label {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#you-label {
+    position: relative;
+    background-color: var(--rock-color);
+    width: 100%;
+}
+
+#computer-label {
+    position: relative;
+    background-color: #3737906a;
+    width: 100%;
+}
